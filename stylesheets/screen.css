@@ -141,7 +141,7 @@ input:focus, input:active {
 /* line 31, ../sass/screen.scss */
 #side-nav .profile-content {
   width: 70%;
-  padding: 3px 7px;
+  padding: 3px 7px 3px 10px;
 }
 /* line 33, ../sass/screen.scss */
 #side-nav .profile-content .profile-name {
@@ -387,6 +387,13 @@ input:focus, input:active {
 }
 
 /* line 100, ../sass/screen.scss */
+#content {
+  width: 100%;
+  height: calc(100vh - 59px);
+  overflow: auto;
+}
+
+/* line 103, ../sass/screen.scss */
 .spinner {
   width: 24px;
   height: 24px;
@@ -394,7 +401,7 @@ input:focus, input:active {
   margin: 0px auto;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .double-bounce1, .double-bounce2 {
   width: 100%;
   height: 100%;
@@ -408,7 +415,7 @@ input:focus, input:active {
   animation: sk-bounce 2.0s infinite ease-in-out;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .double-bounce2 {
   -moz-animation-delay: -1s;
   -webkit-animation-delay: -1s;

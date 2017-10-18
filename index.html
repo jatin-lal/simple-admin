@@ -62,7 +62,7 @@
 						</li>
 						<li class="side-nav-link with-sub row">
 							<div class="left">
-								<i class="fa fa-truck cx-ad-ic" aria-hidden="true"></i>
+								<i class="fa fa-truck" aria-hidden="true"></i>
 								<p class="cx-ad-co">Link 2</p>
 							</div>
 							<div class="right">
@@ -175,30 +175,9 @@
 						<i class="fa fa-sign-out" aria-hidden="true" title="Sign out"></i>
 					</div>
 				</div>
+				<div id="content"></div>
 			</div>
 		</div>
-		<script>
-			opened=false;
-			menus=document.getElementsByClassName('with-sub');
-			elems=document.getElementsByClassName('sub-menu');
-			for (var i=0;i<menus.length;i++){
-				menus[i].onclick=function(){
-					for(i=0;i<menus.length;i++){
-						menus[i].removeAttribute('id', '');
-					}
-					for(i=0;i<elems.length;i++){
-						console.log(elems[i]);
-						elems[i].style.height="0px";
-					}
-					nextNodes=this.nextSibling.nextSibling.childNodes[1].childNodes;
-					sub_menu_num=nextNodes.length - (parseInt(nextNodes.length/2) + 1);
-					sub_height=document.getElementById('mes').offsetHeight;
-					height_to_set=sub_menu_num * sub_height;
-					this.nextSibling.nextSibling.style.height= height_to_set + "px";
-					this.setAttribute('id', 'active');
-					opened=true;
-				};
-			}
-		</script>
+		<script type="text/javascript" src="js/simpleadmin.js"></script>
 	</body>
 </html>
